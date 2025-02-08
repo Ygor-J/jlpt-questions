@@ -1,0 +1,4 @@
+{'question_id': 4, 'question_str': 'ケネディ殺害の容疑者は __ に謎を残したままマフィアに撃たれて死亡した。', 'question_choices': {'1': '動機', '2': '本音', '3': '動力', '4': '下心'}, 'question_answer': '1'}
+{'question_answer': '1', 'question_choices': {'1': '動機', '2': '本音', '3': '動力', '4': '下心'}, 'question_id': 21322323, 'question_str': 'ケネディ殺害の容疑者は __ に謎を残したままマフィアに撃たれて死亡した。'}
+{'question_answer': '1', 'question_choices': {'1': '動機', '2': '本音', '3': '動力', '4': '下心'}, 'question_id': 3432, 'question_str': 'ケネディ殺害の容疑者は __ に謎を残したままマフィアに撃たれて死亡した。'}
+{'question_answer': '1', 'question_choices': {'1': '動機', '2': '本音', '3': '動力', '4': '下心'}, 'question_id': 90, 'question_str': 'ケネディ殺害の容疑者は __ に謎を残したままマフィアに撃たれて死亡した。'}
