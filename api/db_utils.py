@@ -55,6 +55,38 @@ def delete_question_database_duckdb(con: DuckDBPyConnection, question_id_data: i
 
     con.execute(query)
 
+def retrieve_random_row_duckdb(con: DuckDBPyConnection) -> str:
+    '''
+    Retrieves random line from data in the database.
+
+    '''
+
+    query = '''
+        SELECT * FROM jlpt_questions 
+        ORDER BY RANDOM()
+        LIMIT 1
+    '''
+
+    con.execute(query)
+    
+    return con.pl().to_dicts()
+
+
+def retrieve_unseen_questions_duckdb(con: DuckDBPyConnection, seen_questions: list) -> str:
+    '''
+    Retrieves random line from data in the database.
+
+    '''
+    query = f'''
+
+        SELECT * FROM jlpt_questions 
+        WHERE question_id NOT IN {str(tuple(seen_questions))}
+    '''
+
+    con.execute(query)
+
+    return con.pl().to_dicts()
+
 
 # Db utils for file db
 DATABASE_FILE_URI = 'database_file.db' # The path of database file
