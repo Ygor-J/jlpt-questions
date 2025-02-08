@@ -1,4 +1,5 @@
 env
 .env
 __pycache__
+api/__pycache__
 rsc/dump
