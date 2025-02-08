@@ -13,30 +13,28 @@ def retrieve_database_duckdb(con: DuckDBPyConnection) -> str:
 
     query = '''
         SELECT * FROM jlpt_questions
-
     '''
 
     con.execute(query)
     
-    return con.fetchall()
+    return con.pl().to_dicts()
 
 def write_line_to_database_duckdb(con: DuckDBPyConnection, data: dict) -> None:
     '''
     Inserts new data to the duckdb database.
     '''
 
-    question_id_data, question_str_data, question_choices_data, question_answer_data = data.values()
-
     query = f'''
 
         INSERT INTO jlpt_questions (question_id, question_str, question_choices, question_answer)
         VALUES
         (
-            {question_id_data},
-            {question_str_data},
-            {question_choices_data},
-            {question_answer_data}
+            {data['question_id']},
+            '{data['question_str']}',
+            '{data['question_choices']}',
+            '{data['question_answer']}'
         )
+
     '''
 
     con.execute(query)
