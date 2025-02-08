@@ -11,4 +11,4 @@ Rules
 
 ## Initial thoughts:
 
-![img](initial_thoughts.png)
+![img](rsc/explanations/initial_thoughts.png)
