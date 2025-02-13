@@ -3,3 +3,4 @@ env
 __pycache__
 api/__pycache__
 rsc/dump
+api/database_duckdb.db.wal
