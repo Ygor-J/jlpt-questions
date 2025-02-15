@@ -4,3 +4,5 @@ __pycache__
 api/__pycache__
 rsc/dump
 api/database_duckdb.db.wal
+data_ingestion/extracted_data.csv
+data_ingestion/test.html

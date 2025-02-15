@@ -26,13 +26,18 @@ def write_line_to_database_duckdb(con: DuckDBPyConnection, data: dict) -> None:
 
     query = f'''
 
-        INSERT INTO jlpt_questions (question_id, question_str, question_choices, question_answer)
+        INSERT INTO jlpt_questions (question_id, question_str, question_choices, question_answer, question_level, question_explanation, question_type, question_topics)
         VALUES
         (
             {data['question_id']},
             '{data['question_str']}',
-            '{data['question_choices']}',
-            '{data['question_answer']}'
+            {data['question_choices']},
+            '{data['question_answer']}',
+            '{data['question_level']}',
+            '{data['question_explanation']}',
+            '{data['question_type']}',
+            '{data['question_topics']}'
+
         )
 
     '''
