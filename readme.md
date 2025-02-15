@@ -10,16 +10,16 @@ Rules
 4. If I got a question right, it shouldn't show me it again, at least, not in the same session.
 
 # How to Run API?
-1. First create a virtual environment for python
-`python3 -m venv env`
+1. First create a virtual environment for python  
+`python3 -m venv env`  
 
-2. Go to API folder and run app.py
-`cd api`
-`python3 app.py`
+2. Go to API folder and run app.py  
+`cd api`  
+`python3 app.py`  
 
-# How to Run FRONT?
-1. Go to Front folder and run app.py using streamlit
-`streamlit run app.py`
+# How to Run FRONT?  
+1. Go to Front folder and run app.py using streamlit  
+`streamlit run app.py`  
 
 ## Front Working
 ![image](https://github.com/user-attachments/assets/1ec2c8e8-34cf-42d7-b12e-317f88ad672e)
